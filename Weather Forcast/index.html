@@ -9,6 +9,7 @@
     <script src='main.js'></script> -->
 </head>
 <body>
+    
     <label for="weather">Select the weather type today: </label>
 <select id="weather">
   <option value="">--Make a choice--</option>
@@ -21,11 +22,15 @@
 <p></p>
 <script>
     const select = document.querySelector('select');
+    const label = document.querySelector('label');
 const para = document.querySelector('p');
 
 select.addEventListener('change', setWeather);
 
 function setWeather() {
+    label.style.color = "red";
+
+   
   const choice = select.value;
 
   if (choice === 'sunny') {
