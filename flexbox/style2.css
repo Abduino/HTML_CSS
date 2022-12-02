@@ -12,6 +12,7 @@ body{
 }
 img{
     max-width: 100%;
+    /* max-height: 0px; */
 }
 h1,
 h2{
@@ -29,6 +30,8 @@ ul{
     background: #3474e6;
     color: #fff;
     height: 60px;
+    margin-bottom: 10px;
+
 }
 .navbar .logo{
     font-size: x-large;
@@ -61,7 +64,7 @@ ul{
 .header{
     background-color: #0151cc;
     color: #fff;
-    min-height: 400px;
+    min-height: 300px;
 }
 .header h1{
     font-size: 3rem;
@@ -69,7 +72,9 @@ ul{
     line-height: 1.2;
 }
 .header img{
-    max-width: 400px;
+    max-width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .header .container{
     display: flex;
