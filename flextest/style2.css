@@ -85,3 +85,15 @@ img{
 
     vertical-align:middle;
 }
+.textalignment .top{
+    text-align: center;
+    border: solid 1px cadetblue;
+}
+.textalignment .right{
+    text-align:right;
+    border: solid 1px cadetblue;
+}
+.textalignment .left{
+    text-align:left;
+    border: solid 1px cadetblue;
+}
