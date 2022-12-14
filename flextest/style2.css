@@ -1,17 +1,28 @@
 .nav .container{
     background-color:aquamarine;
+    /* align-items:flex-end; */
+    margin-bottom: 10px;
 }
 a:link{
     color: green;
 }
 a:visited{
-    color: red;
+    color: black;
 }
 a:active{
     color:blue;
 }
 a:hover{
-    color:black;
+    color: red;
+}
+.navlist{
+    /* list-style: none; */
+    list-style-type:none;
+}
+li{
+    display: inline;
+    font-weight: bolder;
+    font-size: 16px;
 }
 
 .container{
