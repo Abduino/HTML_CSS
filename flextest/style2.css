@@ -61,3 +61,27 @@ h2{
         flex: 100%;
     }
 }
+.super{
+    vertical-align:text-top;
+}
+img{
+    width: 8px;
+    height: 8px;
+
+}
+.imagealign{
+
+    vertical-align: super;
+}
+.imagealign1{
+
+    vertical-align:text-bottom;
+}
+.imagealign2{
+
+    vertical-align:sub
+}
+.imagealign3{
+
+    vertical-align:middle;
+}
