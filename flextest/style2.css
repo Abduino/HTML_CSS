@@ -3,12 +3,11 @@
     font-family: so "Sofia", sans-serif;
     margin: auto;
     /* justify-self: center; */
-    
     /* align-items: flex-start; */
     /* align-items: center; */
         display: flex;
     justify-content: space-between;
-    max-width: 1100px;
+    max-width: 90%;
     /* min-width: 100px; */
     /* text-align: center; */
     flex-wrap: wrap;
@@ -16,7 +15,18 @@
     /* justify-content: center; */
     border-style: solid;
     border-width: 1px;
+}
 
+#box3{
+    background-color:cyan ;
+}
+
+#box2{
+    background-color: blueviolet;
+}
+
+#box3{
+    background-color:azure;
 }
 .box{
     border-style: solid;
