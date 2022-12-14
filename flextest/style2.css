@@ -88,12 +88,15 @@ img{
 .textalignment .top{
     text-align: center;
     border: solid 1px cadetblue;
+    text-decoration: overline;
 }
 .textalignment .right{
     text-align:right;
     border: solid 1px cadetblue;
+    text-decoration: line-through;
 }
 .textalignment .left{
     text-align:left;
     border: solid 1px cadetblue;
+    text-decoration: underline;
 }
