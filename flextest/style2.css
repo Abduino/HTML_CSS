@@ -19,10 +19,16 @@
 
 #box3{
     background-color:cyan ;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    text-indent: 50px;
 }
 
 #box2{
     background-color: blueviolet;
+    text-transform: uppercase;
+    /* flood-opacity:0%; */
+    opacity: 20%;
 }
 
 #box3{
@@ -94,9 +100,11 @@ img{
     text-align:right;
     border: solid 1px cadetblue;
     text-decoration: line-through;
+    text-decoration-color: aqua;
 }
 .textalignment .left{
     text-align:left;
     border: solid 1px cadetblue;
     text-decoration: underline;
+    text-decoration-color: aqua;
 }
