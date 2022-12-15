@@ -43,8 +43,8 @@
       </div>
       <div class="display">
         <div class="display-container">
-            <p class="but" onmouseleave="hidePanel()" onmouseover="displayPanel()">Click this area to display the panel</p>
-            <div id="panel">
+            <p class="but" onclick="displayPanel()">Click this area to display the panel</p>
+            <div id="panel" class="panel">
                 <h2>This is box five</h2>In the following example a container has been set to display: flex, which means that the three child items become flex items.<br> The value of justify-content has been set to space-between in order to space the items out evenly on the main axis.
             <br>has
             <br>extra
@@ -78,10 +78,23 @@
 
     <script>
         function displayPanel(){
-            document.getElementById("panel").style.display= "block";
-        }
-        function hidePanel(){
-            document.getElementById("panel").style.display = "none";
+            var val = document.getElementById("panel");
+            const element = document.querySelector('.panel');
+            const element2 = getComputedStyle(panel);
+            const dis = element2.display;
+            console.log(dis);
+            if (dis == "none"){
+                document.getElementById("panel").style.display = "block";
+                console.log("gud");
+            }
+            else if(dis == "block"){
+                console.log("bad");
+                document.getElementById("panel").style.display = "none";
+            }
+            else{
+                console.log("no ans");
+            }
+            
         }
     </script>
     
