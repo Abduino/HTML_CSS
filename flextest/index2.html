@@ -15,7 +15,7 @@
     <nav class="nav">
         <div class="container">
             <ul class="navlist">
-                <li><a href="#">Home</a></li>
+                <li><a class="home" href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -41,6 +41,18 @@
             <br>text
         </div>
       </div>
+      <div class="display">
+        <div class="display-container">
+            <p class="but" onmouseleave="hidePanel()" onmouseover="displayPanel()">Click this area to display the panel</p>
+            <div id="panel">
+                <h2>This is box five</h2>In the following example a container has been set to display: flex, which means that the three child items become flex items.<br> The value of justify-content has been set to space-between in order to space the items out evenly on the main axis.
+            <br>has
+            <br>extra
+            <br>text
+
+            </div>
+        </div>
+    </div>
       <div class="textalign">
         <br>
         <p>has been set to display: <img src="images.jpg" class="imagealign"/> flex, which means</p>
@@ -63,6 +75,15 @@
         <i class="material-icons">computer</i>
        <button name="submit"><i class="material-icons">person</i></button> 
     </div>
+
+    <script>
+        function displayPanel(){
+            document.getElementById("panel").style.display= "block";
+        }
+        function hidePanel(){
+            document.getElementById("panel").style.display = "none";
+        }
+    </script>
     
 </body>
 </html>

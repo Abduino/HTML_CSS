@@ -5,6 +5,18 @@
 }
 a:link{
     color: green;
+    text-decoration: none;
+    padding: 10px;
+    /* margin: 2px; */
+}
+.home{
+    background-color: azure;
+    padding: 10px;
+
+}
+.home:hover{
+    font-size: 18px;
+    text-decoration: none;
 }
 a:visited{
     color: black;
@@ -14,6 +26,7 @@ a:active{
 }
 a:hover{
     color: red;
+    font-size: 18px;
 }
 .navlist{
     /* list-style: none; */
@@ -135,4 +148,21 @@ img{
     border: solid 1px cadetblue;
     text-decoration: underline;
     text-decoration-color: aqua;
+}
+
+.display-container{
+    margin: auto;
+
+}
+.but{
+    background-color: blue;
+}
+#panel .but{
+    
+    margin: 2px;
+
+}
+#panel{
+    background-color: blue;
+    display: none;
 }
