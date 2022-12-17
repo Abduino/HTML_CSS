@@ -55,6 +55,10 @@ li{
     border-style: solid;
     border-width: 1px;
 }
+.tablecontainer{
+    display: flex;
+    /* background-color: yellow; */
+}
 
 #box3{
     background-color:cyan ;
@@ -108,13 +112,22 @@ h2{
         flex: 100%;
     }
 }
+
+
+
+.textalign-container{
+    width: 90%;
+    border: solid 0.5px black;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+}
 .super{
     vertical-align:text-top;
 }
 img{
     width: 8px;
     height: 8px;
-
 }
 .imagealign{
 
@@ -132,25 +145,43 @@ img{
 
     vertical-align:middle;
 }
-.textalignment .top{
+
+
+
+
+
+
+.textalignment-container{
+    width: 90%;
+    margin: auto;
+
+}
+.textalignment-container .top{
     text-align: center;
     border: solid 1px cadetblue;
     text-decoration: overline;
 }
-.textalignment .right{
+.textalignment-container .right{
     text-align:right;
     border: solid 1px cadetblue;
     text-decoration: line-through;
     text-decoration-color: aqua;
 }
-.textalignment .left{
+.textalignment-container .left{
     text-align:left;
     border: solid 1px cadetblue;
     text-decoration: underline;
     text-decoration-color: aqua;
 }
 
+
+
+
+
+
+
 .display-container{
+    width: 90%;
     margin: auto;
 
 }
@@ -166,19 +197,24 @@ img{
 }
 
 #panel .but{
+    width: 90%;
     padding: 10px;
-    
-    margin: 2px;
-
 }
 
 .panel{
+   
     background-color: blue;
     display: none;
     color: rgb(243, 243, 248);
     border: solid 0.5px black;
     border-radius: 10px;
-    font-size: 20px;
-    padding: 20px;
     
+}
+.table{
+    border-collapse: collapse;
+    width: 50%;
+}
+tr, td{
+    border: solid 1px black;
+
 }
