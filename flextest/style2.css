@@ -1,7 +1,30 @@
+.textalignment-container, 
+.container,
+.textalign-container,
+.display-container,
+.position-container,
+.tablecontainer{
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    border: solid 0.5px #ddd ;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: so "Sofia", sans-serif;
+    
+
+}
+
+
+
+
 .nav .container{
+ 
+   /* margin-bottom: 400px; */
+    /* margin: auto; */
     background-color:aquamarine;
     /* align-items:flex-end; */
-    margin-bottom: 10px;
+    /* position: fixed; */
 }
 a:link{
     color: green;
@@ -39,26 +62,20 @@ li{
 }
 
 .container{
-    font-family: so "Sofia", sans-serif;
-    margin: auto;
+    
     /* justify-self: center; */
     /* align-items: flex-start; */
     /* align-items: center; */
         display: flex;
     justify-content: space-between;
-    max-width: 90%;
+    /* max-width: 90%; */
     /* min-width: 100px; */
     /* text-align: center; */
     flex-wrap: wrap;
     /* flex-flow: row-reverse nowrap; */
     /* justify-content: center; */
-    border-style: solid;
-    border-width: 1px;
 }
-.tablecontainer{
-    display: flex;
-    /* background-color: yellow; */
-}
+
 
 #box3{
     background-color:cyan ;
@@ -80,8 +97,8 @@ li{
     background-color:azure;
 }
 .box{
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #ddd; 
+
     padding: 15px;
     margin: 10px;
     flex: 20%;
@@ -115,13 +132,6 @@ h2{
 
 
 
-.textalign-container{
-    width: 90%;
-    border: solid 0.5px black;
-    border-radius: 20px;
-    margin: auto;
-    padding: 10px;
-}
 .super{
     vertical-align:text-top;
 }
@@ -148,14 +158,6 @@ img{
 
 
 
-
-
-
-.textalignment-container{
-    width: 90%;
-    margin: auto;
-
-}
 .textalignment-container .top{
     text-align: center;
     border: solid 1px cadetblue;
@@ -176,15 +178,6 @@ img{
 
 
 
-
-
-
-
-.display-container{
-    width: 90%;
-    margin: auto;
-
-}
 .but{
     background-color: lightcoral;
     padding: 10px;
@@ -210,11 +203,65 @@ img{
     border-radius: 10px;
     
 }
+
+
+
+.icons-container{
+    width: 90%;
+    margin:auto;
+    border: solid 0.5px #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.tablecontainer{
+    display: flex;
+    overflow-x: auto;
+    /* background-color: yellow; */
+}
 .table{
+    
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
     border-collapse: collapse;
-    width: 50%;
+ 
 }
 tr, td{
-    border: solid 1px black;
+    padding: 10px;
+    border-bottom: solid 1px black;
+
+}
+tr:nth-child(even){
+    background-color: antiquewhite;
+}
+tr:hover{
+    background-color:cornflowerblue;
+}
+
+
+
+
+
+.relative-box{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border: solid 1px #ddd;
+
+}
+.absolute-box{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 80px;
+    right: 20px;
+    border: solid 1px #ddd;
 
 }
