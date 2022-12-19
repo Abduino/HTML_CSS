@@ -318,6 +318,7 @@ tr:hover{
 
 
 .center-flexbox{
+    background-color:rgba(76, 175, 80, 1);
     margin: auto;
     width: 90%;
     display: flex;
