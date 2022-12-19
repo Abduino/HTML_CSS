@@ -3,7 +3,9 @@
 .textalign-container,
 .display-container,
 .position-container,
-.tablecontainer{
+.tablecontainer,
+.cssalignment-container,
+.image-float-container{
     width: 90%;
     padding: 10px;
     margin: auto;
@@ -11,15 +13,10 @@
     border-radius: 10px;
     margin-bottom: 10px;
     font-family: so "Sofia", sans-serif;
-    
-
 }
 
-
-
-
-.nav .container{
- 
+.nav .container{ 
+    /* display: inline-block; */
    /* margin-bottom: 400px; */
     /* margin: auto; */
     background-color:aquamarine;
@@ -34,7 +31,7 @@ a:link{
 }
 .home{
     background-color: azure;
-    padding: 10px;
+    padding: 5px;
 
 }
 .home:hover{
@@ -56,9 +53,11 @@ a:hover{
     list-style-type:none;
 }
 li{
-    display: inline;
+    display: inline-block;
     font-weight: bolder;
     font-size: 16px;
+    padding: 5px;
+    margin:5px;
 }
 
 .container{
@@ -95,6 +94,7 @@ li{
 
 #box3{
     background-color:azure;
+    overflow: auto;
 }
 .box{
     border: solid 1px #ddd; 
@@ -128,14 +128,24 @@ h2{
     .box{
         flex: 100%;
     }
-}
+    /* .image-float-container{
+        display: flex;
+        flex: 100%;
+        flex-wrap: wrap;
+    }
+    .imgfloat{
+        flex: 100%;
+        /* float: none;
+        width: 100%; 
+    } */
 
+}
 
 
 .super{
     vertical-align:text-top;
 }
-img{
+.imagealign, .imagealign1, .imagealign2, .imagealign3{
     width: 8px;
     height: 8px;
 }
@@ -215,9 +225,6 @@ img{
 }
 
 
-
-
-
 .tablecontainer{
     overflow-x: auto;
     /* background-color: yellow; */
@@ -246,21 +253,55 @@ tr:hover{
 
 
 
-
+.position-container{
+    overflow: auto;
+}
 
 .relative-box{
     position: relative;
     width: 500px;
     height: 300px;
-    border: solid 1px #ddd;
-
+    border: solid 1px black;
 }
+
+
+
 .absolute-box{
     position: absolute;
     width: 200px;
     height: 200px;
     top: 80px;
     right: 20px;
-    border: solid 1px #ddd;
+    border: solid 1px black;    
+}
 
+.imgfloat{
+    border-radius: 10px;
+    /* max-height: 100px; */
+    width: 40%;
+    height: 150px;
+    float: right;
+    margin: 10px;
+
+}
+
+
+.element-alignment{
+    margin: auto;
+    width: 50%;
+    border: solid 1px green;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.text-alignment{
+    text-align: center;
+    border: solid 1px yellow;
+    border-radius: 10px;
+}
+.image-alignment{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    border-radius: 10px;
 }
