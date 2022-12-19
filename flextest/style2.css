@@ -276,15 +276,19 @@ tr:hover{
 }
 
 .imgfloat{
-    border-radius: 10px;
+   
     /* max-height: 100px; */
     width: 40%;
     height: 150px;
     float: right;
-    margin: 10px;
+
 
 }
-
+.image-float-container ::after{
+    content: "";
+    clear: both;
+    display: table;
+}
 
 .element-alignment{
     margin: auto;
@@ -304,4 +308,16 @@ tr:hover{
     display: block;
     width: 50%;
     border-radius: 10px;
+}
+
+
+.center-flexbox{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    border: solid 1px black;
+    /* justify-content: center; */
+    height: 100px;
+    align-items: center;
+
 }
